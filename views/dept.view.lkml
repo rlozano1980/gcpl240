@@ -25,4 +25,11 @@ view: dept {
     type: count
     drill_fields: [dept_id, dept_name, salary.count]
   }
+  dimension: collection_month  {
+    type: date_raw
+    sql: ${TABLE}."LASTEST_COLLECTION_MONTH" ;;
+    convert_tz: no
+
+  }
+
 }
