@@ -29,6 +29,7 @@ view: dept {
     type: date_raw
     sql: ${TABLE}."LASTEST_COLLECTION_MONTH" ;;
     convert_tz: no
+    hidden: yes
 
   }
 
